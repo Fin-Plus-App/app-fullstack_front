@@ -17,14 +17,12 @@ services:
     volumes:
       - react-volume:/var/www/html
     depends_on:
-      - postgres
-      - node
       - react
 
 networks:
-      fullstack-network:
-      name: fullstack-network
-      external: true
+  fullstack-network:
+    name: fullstack-network
+    external: true
 
 volumes:
   react-volume:
